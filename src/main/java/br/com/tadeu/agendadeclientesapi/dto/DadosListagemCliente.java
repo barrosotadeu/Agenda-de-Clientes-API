@@ -9,12 +9,13 @@ public record DadosListagemCliente(
 		String nome,
 		String cpf,
 		String telefone,
-		String email)
+		String email,
+		Endereco endereco)
 		
 		 {
 	
 		public DadosListagemCliente(Cliente cliente) {
-			this(cliente.getId(), cliente.getNome(), cliente.getCpf(), cliente.getTelefone(), cliente.getEmail());
+			this(cliente.getId(), cliente.getNome(), cliente.getCpf(), cliente.getTelefone(), cliente.getEmail(), cliente.getEndereco());
 		}
 		
 		

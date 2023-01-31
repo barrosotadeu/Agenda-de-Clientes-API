@@ -15,8 +15,9 @@ public record DadosCadastraCliente(
 		String telefone,
 		@NotBlank
 		String email,
-		@Valid
+		
 		@NotNull
+		@Valid
 		DadosEndereco endereco
 		
 		) {

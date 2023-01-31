@@ -2,8 +2,13 @@ package br.com.tadeu.agendadeclientesapi.model;
 
 import br.com.tadeu.agendadeclientesapi.dto.DadosEndereco;
 import jakarta.persistence.Embeddable;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Embeddable
+@Getter
+@NoArgsConstructor
+
 public class Endereco {
 	private String cep;
 	private String logradouro;
@@ -21,9 +26,7 @@ public class Endereco {
 		this.uf = dados.uf();
 	}
 
-	public Endereco() {
-		
-	}
+	
 
 	public Endereco(String cep, String logradouro, String complemento, String bairro, String cidade, String uf) {
 		super();
